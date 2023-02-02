@@ -1,0 +1,155 @@
+/*Link a google fonts para cambiar la letra
+*/
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+
+body{
+    font-family: 'Space Grotesk';
+    background-color:rgb(102, 101, 101);
+}
+
+.contenedor{
+    width: 100%;
+    margin: 20px;
+}
+
+header{
+    background-image: url('Escritorio.jpg');
+    background-size: 100%;
+    margin: 20px 0;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+}
+
+header img{
+    border-radius: 50%;
+    max-width: 300px;
+    margin-top: 80px;
+    margin-left: 15%;
+    width: 200px;
+    height: 200px;
+}
+
+header h1{
+    margin-left: 50%;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 3px 3px rgb(89, 156, 89);
+}
+
+header h2{
+    margin-left: 50%;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 2px 2px grey ;
+}
+
+
+.principal{
+    width: 60%;
+    background-color:rgb(188, 219, 192);;
+    padding: 30px;
+    border-width: 20px;
+    float: left;
+    box-sizing: content-box;
+}
+
+#perfil{
+    text-decoration: underline;
+    margin-bottom: 20px;
+    margin-top: 70px;
+}
+
+#perfil1{
+    margin-top: 20px;
+}
+
+
+aside{
+    width: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgb(164, 190, 167);
+    float: right;
+}
+
+.escuela{
+text-align: left;
+}
+
+.titulo{
+    text-align: right;
+}
+
+#educacion{
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+
+#laboral{
+    text-decoration: underline;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.habilidades1{
+    list-style-type:square;
+}
+
+#habilidades{
+    text-decoration: underline;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+#idiomas{
+    text-decoration: underline;
+    margin-top: 60px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+
+a{
+    color:  rgb(204, 236, 208);
+    font-weight: 200px;
+}
+
+footer{
+    clear: both;
+    float: left;
+    margin-top: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Para Celulares:*/
+@media only screen and (max-width: 600px) {
+    .principal{
+        width: 100%;
+    }
+    aside{
+        width:100%;
+    }
+    header{
+       background-image: none;
+    }
+}
+
+ /* Para tablets: */
+@media only screen and (max-width: 770px) {
+    .principal{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+    }
+}
+
+/*Para Dispositivos Pantalla Grande*/
+@media only screen and (max-width: 1200px){
+    .contenedor{
+        width: 100%;
+    }
+}
