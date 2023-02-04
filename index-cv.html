@@ -9,9 +9,10 @@
     <!--Favicon-->
     <link rel="icon" type="image/x-icon" href="CVRojo.png">
     <!--Hoja externa de CSS-->
-    <link rel="stylesheet" href="estilos-cv.css">
+    <link rel="stylesheet" type="text/css" href="estilos-cv.css">
     <!--Font Awesome link-->
     <script src="https://kit.fontawesome.com/de3b9b99b8.js" crossorigin="anonymous"></script>
+    
     
     
 </head>
@@ -20,7 +21,7 @@
     <div class="contenedor">
         <header>
             <div>
-              <img src="FotoCv.jpg">
+              <img src="FotoCv.jpg" alt="foto de Linda Perez para cv">
             </div>
             <h1>Linda Lopez</h1>
             <h2>Recepcionista</h2>
@@ -146,20 +147,23 @@
 
         <footer>
 
-            <p id="redes" Redes Sociales>
-            
+            <button onclick="redesSociales()">Redes Sociales</button>
+
+            <div id="redes">
                <a href="https://www.facebook.com/" target="_blank">
                <i class="fa-brands fa-facebook"></i> LindaPerez</a>/
                <a href="https://www.twitter.com/" target="_blank">
                <i class="fa-brands fa-square-twitter"></i> @lindap85</a>/
                <a href="https://www.instagram.com/" target="_blank">
                <i class="fa-brands fa-square-instagram"></i> @lindap85OK</a>
-            </p>
+                
+            </div>
 
         </footer>
 
     </div>
-    <script src="cv.js"></script>
-
+    
+    <!--Funcionalidades JS-->
+    <script type="text/javascript" src="cv.js"></script>
 </body>
 </html>

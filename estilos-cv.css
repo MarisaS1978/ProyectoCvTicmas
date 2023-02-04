@@ -1,10 +1,11 @@
-/*Link a google fonts para cambiar la letra
-*/
+/*Link a google fonts para cambiar la letra */
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 body{
     font-family: 'Space Grotesk';
-    background-color:rgb(102, 101, 101);
+    background-image: url('arabeOsc.jpg');
+    
 }
 
 .contenedor{
@@ -35,6 +36,7 @@ header h1{
     text-align: center;
     font-size: 50px;
     text-shadow: 3px 3px rgb(89, 156, 89);
+    font-family: 'Fjalla One';
 }
 
 header h2{
@@ -42,17 +44,26 @@ header h2{
     text-align: center;
     font-size: 30px;
     text-shadow: 2px 2px grey ;
+    font-family: 'Fjalla One';
+
 }
 
 
 .principal{
-    width: 60%;
-    background-color:rgb(188, 219, 192);;
+    width: 30%;
+    background-color:rgb(188, 219, 192);
     padding: 30px;
+    border-radius: 5px;
     border-width: 20px;
     float: left;
-    box-sizing: content-box;
+    box-sizing: border-box;
+    height:1070px;
 }
+
+#telefono2, #mail, button{
+    cursor:pointer;
+}
+
 
 #perfil{
     text-decoration: underline;
@@ -66,11 +77,13 @@ header h2{
 
 
 aside{
-    width: 80%;
+    width: 70%;
     padding: 20px;
+    border-radius: 5px;
     box-sizing: border-box;
     background: rgb(164, 190, 167);
     float: right;
+    height: fit-content;
 }
 
 .escuela{
@@ -111,21 +124,44 @@ text-align: left;
 
 
 a{
-    color:  rgb(204, 236, 208);
+    color:  white;
     font-weight: 200px;
+    
 }
 
 footer{
     clear: both;
-    float: left;
     margin-top: 20px;
     box-sizing: border-box;
     width: 100%;
     padding: 20px;
 }
 
+#redes{
+    display:none;
+}
+
+button{
+    background-color: rgb(188, 219, 192); 
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 12px;
+    transition-duration: 0.2s;
+}
+
+button:hover{
+    background-color: white; 
+    color: black; 
+    border: 2px solid grey; 
+}
+/*Responsive:*/
 /* Para Celulares:*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px){
     .principal{
         width: 100%;
     }
@@ -135,10 +171,17 @@ footer{
     header{
        background-image: none;
     }
+    body{
+        background: none;
+    }
+    a{
+        color: black;
+        font-weight: 200px;
+    }
 }
 
  /* Para tablets: */
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 768px) {
     .principal{
         width: 100%;
     }
