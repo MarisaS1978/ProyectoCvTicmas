@@ -57,8 +57,9 @@ header h2{
     border-width: 20px;
     float: left;
     box-sizing: border-box;
-    height:1070px;
+    height:fit-content;
 }
+
 
 #telefono2, #mail, button{
     cursor:pointer;
@@ -69,6 +70,7 @@ header h2{
     text-decoration: underline;
     margin-bottom: 20px;
     margin-top: 70px;
+    padding-bottom:25px;
 }
 
 #perfil1{
@@ -82,8 +84,8 @@ aside{
     border-radius: 5px;
     box-sizing: border-box;
     background: rgb(164, 190, 167);
-    float: right;
-    height: fit-content;
+    float: left;
+    
 }
 
 .escuela{
@@ -117,7 +119,7 @@ text-align: left;
 
 #idiomas{
     text-decoration: underline;
-    margin-top: 60px;
+    margin-top: 50px;
     margin-right: 50px;
     margin-bottom: 20px;
 }
@@ -162,7 +164,7 @@ button:hover{
 }
 /*Responsive:*/
 /* Para Celulares:*/
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 767px){
     .principal{
         width: 100%;
     }
@@ -178,11 +180,12 @@ button:hover{
     a{
         color: black;
         font-weight: 200px;
+        font-size: medium;
     }
 }
 
  /* Para tablets: */
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
     .principal{
         width: 100%;
     }
@@ -192,7 +195,7 @@ button:hover{
 }
 
 /*Para Dispositivos Pantalla Grande*/
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1024px){
     .contenedor{
         width: 100%;
     }
